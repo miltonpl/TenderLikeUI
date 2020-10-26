@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		528D77B025453CFD000FC383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77AF25453CFD000FC383 /* AppDelegate.swift */; };
+		528D77B225453CFD000FC383 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77B125453CFD000FC383 /* SceneDelegate.swift */; };
+		528D77B425453CFD000FC383 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77B325453CFD000FC383 /* ViewController.swift */; };
+		528D77B725453CFD000FC383 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528D77B525453CFD000FC383 /* Main.storyboard */; };
+		528D77B925453D02000FC383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 528D77B825453D02000FC383 /* Assets.xcassets */; };
+		528D77BC25453D02000FC383 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528D77BA25453D02000FC383 /* LaunchScreen.storyboard */; };
+		528D77CE254545EB000FC383 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77CD254545EB000FC383 /* UIViewX.swift */; };
+		528D77D125460813000FC383 /* CardViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77D025460813000FC383 /* CardViewDataSource.swift */; };
+		528D77D3254609A4000FC383 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77D2254609A4000FC383 /* CardView.swift */; };
+		528D77D6254612FF000FC383 /* ServiceManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77D5254612FF000FC383 /* ServiceManger.swift */; };
+		528D77D92546150C000FC383 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77D82546150C000FC383 /* Constants.swift */; };
+		528D77DF254641E3000FC383 /* PersonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 528D77DE254641E3000FC383 /* PersonView.xib */; };
+		528D77E1254641F7000FC383 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77E0254641F7000FC383 /* PersonView.swift */; };
+		528D77E325464521000FC383 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77E225464521000FC383 /* UIView+Ext.swift */; };
+		528D77EE254678DA000FC383 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77ED254678DA000FC383 /* ProfileView.swift */; };
+		528D77F0254678FB000FC383 /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 528D77EF254678FB000FC383 /* ProfileView.xib */; };
+		528D77F225467EE9000FC383 /* CalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 528D77F125467EE9000FC383 /* CalendarView.xib */; };
+		528D77F425467EFC000FC383 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77F325467EFC000FC383 /* CalendarView.swift */; };
+		528D77F6254688ED000FC383 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77F5254688ED000FC383 /* UIImageView+Ext.swift */; };
+		89D775BC3AC68351ED16CD90 /* Pods_TinderLikeUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD9295F9122A8E93A388A97 /* Pods_TinderLikeUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DD9295F9122A8E93A388A97 /* Pods_TinderLikeUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinderLikeUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B7E5C07986ED26771FF8D7D /* Pods-TinderLikeUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderLikeUI.release.xcconfig"; path = "Target Support Files/Pods-TinderLikeUI/Pods-TinderLikeUI.release.xcconfig"; sourceTree = "<group>"; };
+		4F6B756D6A56C1C4D3FCDF81 /* Pods-TinderLikeUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderLikeUI.debug.xcconfig"; path = "Target Support Files/Pods-TinderLikeUI/Pods-TinderLikeUI.debug.xcconfig"; sourceTree = "<group>"; };
+		528D77AC25453CFD000FC383 /* TinderLikeUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderLikeUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		528D77AF25453CFD000FC383 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		528D77B125453CFD000FC383 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		528D77B325453CFD000FC383 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		528D77B625453CFD000FC383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		528D77B825453D02000FC383 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		528D77BB25453D02000FC383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		528D77BD25453D02000FC383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		528D77CD254545EB000FC383 /* UIViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
+		528D77D025460813000FC383 /* CardViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewDataSource.swift; sourceTree = "<group>"; };
+		528D77D2254609A4000FC383 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		528D77D5254612FF000FC383 /* ServiceManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManger.swift; sourceTree = "<group>"; };
+		528D77D82546150C000FC383 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		528D77DE254641E3000FC383 /* PersonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonView.xib; sourceTree = "<group>"; };
+		528D77E0254641F7000FC383 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		528D77E225464521000FC383 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		528D77ED254678DA000FC383 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		528D77EF254678FB000FC383 /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
+		528D77F125467EE9000FC383 /* CalendarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarView.xib; sourceTree = "<group>"; };
+		528D77F325467EFC000FC383 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		528D77F5254688ED000FC383 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		528D77A925453CFD000FC383 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89D775BC3AC68351ED16CD90 /* Pods_TinderLikeUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		528D77A325453CFD000FC383 = {
+			isa = PBXGroup;
+			children = (
+				528D77AE25453CFD000FC383 /* TinderLikeUI */,
+				528D77AD25453CFD000FC383 /* Products */,
+				B03E54CB85B0B6A78004339B /* Pods */,
+				954CE7BE59EA2907EB2A6402 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		528D77AD25453CFD000FC383 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				528D77AC25453CFD000FC383 /* TinderLikeUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		528D77AE25453CFD000FC383 /* TinderLikeUI */ = {
+			isa = PBXGroup;
+			children = (
+				528D77DA254615D4000FC383 /* Common */,
+				528D77C525453D0F000FC383 /* Screens */,
+				528D77C425453D0F000FC383 /* Storyboard */,
+				528D77C325453D0F000FC383 /* Support Files */,
+				528D77B825453D02000FC383 /* Assets.xcassets */,
+			);
+			path = TinderLikeUI;
+			sourceTree = "<group>";
+		};
+		528D77C325453D0F000FC383 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				528D77AF25453CFD000FC383 /* AppDelegate.swift */,
+				528D77BD25453D02000FC383 /* Info.plist */,
+				528D77B125453CFD000FC383 /* SceneDelegate.swift */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		528D77C425453D0F000FC383 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				528D77BA25453D02000FC383 /* LaunchScreen.storyboard */,
+				528D77B525453CFD000FC383 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		528D77C525453D0F000FC383 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				528D77EC25467883000FC383 /* NibFiles */,
+				528D77CB25453DED000FC383 /* Controller */,
+				528D77CA25453DA1000FC383 /* ViewModel */,
+				528D77C925453DA1000FC383 /* Model */,
+				528D77C625453D0F000FC383 /* View */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		528D77C625453D0F000FC383 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				528D77DE254641E3000FC383 /* PersonView.xib */,
+				528D77E0254641F7000FC383 /* PersonView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		528D77C725453D10000FC383 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				528D77C825453D10000FC383 /* New Group */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		528D77C825453D10000FC383 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				528D77CD254545EB000FC383 /* UIViewX.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		528D77C925453DA1000FC383 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				528D77D2254609A4000FC383 /* CardView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		528D77CA25453DA1000FC383 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				528D77D025460813000FC383 /* CardViewDataSource.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		528D77CB25453DED000FC383 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				528D77B325453CFD000FC383 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		528D77CC25453E0F000FC383 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				528D77E225464521000FC383 /* UIView+Ext.swift */,
+				528D77F5254688ED000FC383 /* UIImageView+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		528D77D4254612CA000FC383 /* ServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				528D77D5254612FF000FC383 /* ServiceManger.swift */,
+			);
+			path = ServiceManager;
+			sourceTree = "<group>";
+		};
+		528D77D7254614EE000FC383 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				528D77D82546150C000FC383 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		528D77DA254615D4000FC383 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				528D77C725453D10000FC383 /* Helper */,
+				528D77CC25453E0F000FC383 /* Extensions */,
+				528D77D4254612CA000FC383 /* ServiceManager */,
+				528D77D7254614EE000FC383 /* Constants */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		528D77E7254677E4000FC383 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				528D77ED254678DA000FC383 /* ProfileView.swift */,
+				528D77EF254678FB000FC383 /* ProfileView.xib */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		528D77E8254677E4000FC383 /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				528D77F125467EE9000FC383 /* CalendarView.xib */,
+				528D77F325467EFC000FC383 /* CalendarView.swift */,
+			);
+			path = CalendarView;
+			sourceTree = "<group>";
+		};
+		528D77E9254677E4000FC383 /* CAllView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CAllView;
+			sourceTree = "<group>";
+		};
+		528D77EA2546782F000FC383 /* LockView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LockView;
+			sourceTree = "<group>";
+		};
+		528D77EB25467846000FC383 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		528D77EC25467883000FC383 /* NibFiles */ = {
+			isa = PBXGroup;
+			children = (
+				528D77E7254677E4000FC383 /* ProfileView */,
+				528D77E8254677E4000FC383 /* CalendarView */,
+				528D77E9254677E4000FC383 /* CAllView */,
+				528D77EB25467846000FC383 /* MapView */,
+				528D77EA2546782F000FC383 /* LockView */,
+			);
+			path = NibFiles;
+			sourceTree = "<group>";
+		};
+		954CE7BE59EA2907EB2A6402 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DD9295F9122A8E93A388A97 /* Pods_TinderLikeUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B03E54CB85B0B6A78004339B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F6B756D6A56C1C4D3FCDF81 /* Pods-TinderLikeUI.debug.xcconfig */,
+				2B7E5C07986ED26771FF8D7D /* Pods-TinderLikeUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		528D77AB25453CFD000FC383 /* TinderLikeUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 528D77C025453D02000FC383 /* Build configuration list for PBXNativeTarget "TinderLikeUI" */;
+			buildPhases = (
+				C51037A22B05388ADA3BF641 /* [CP] Check Pods Manifest.lock */,
+				528D77A825453CFD000FC383 /* Sources */,
+				528D77A925453CFD000FC383 /* Frameworks */,
+				528D77AA25453CFD000FC383 /* Resources */,
+				528D77CF25454863000FC383 /* ShellScript */,
+				02B90E7EF8B688DA9E5E1B56 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TinderLikeUI;
+			productName = TenderLikeUI;
+			productReference = 528D77AC25453CFD000FC383 /* TinderLikeUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		528D77A425453CFD000FC383 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = Milton;
+				TargetAttributes = {
+					528D77AB25453CFD000FC383 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = 528D77A725453CFD000FC383 /* Build configuration list for PBXProject "TinderLikeUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 528D77A325453CFD000FC383;
+			productRefGroup = 528D77AD25453CFD000FC383 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				528D77AB25453CFD000FC383 /* TinderLikeUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		528D77AA25453CFD000FC383 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				528D77BC25453D02000FC383 /* LaunchScreen.storyboard in Resources */,
+				528D77F0254678FB000FC383 /* ProfileView.xib in Resources */,
+				528D77DF254641E3000FC383 /* PersonView.xib in Resources */,
+				528D77B925453D02000FC383 /* Assets.xcassets in Resources */,
+				528D77F225467EE9000FC383 /* CalendarView.xib in Resources */,
+				528D77B725453CFD000FC383 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02B90E7EF8B688DA9E5E1B56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TinderLikeUI/Pods-TinderLikeUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TinderLikeUI/Pods-TinderLikeUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TinderLikeUI/Pods-TinderLikeUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		528D77CF25454863000FC383 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nexit 1\nfi\n";
+		};
+		C51037A22B05388ADA3BF641 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TinderLikeUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		528D77A825453CFD000FC383 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				528D77E1254641F7000FC383 /* PersonView.swift in Sources */,
+				528D77D125460813000FC383 /* CardViewDataSource.swift in Sources */,
+				528D77F425467EFC000FC383 /* CalendarView.swift in Sources */,
+				528D77E325464521000FC383 /* UIView+Ext.swift in Sources */,
+				528D77B425453CFD000FC383 /* ViewController.swift in Sources */,
+				528D77CE254545EB000FC383 /* UIViewX.swift in Sources */,
+				528D77B025453CFD000FC383 /* AppDelegate.swift in Sources */,
+				528D77D3254609A4000FC383 /* CardView.swift in Sources */,
+				528D77F6254688ED000FC383 /* UIImageView+Ext.swift in Sources */,
+				528D77D6254612FF000FC383 /* ServiceManger.swift in Sources */,
+				528D77B225453CFD000FC383 /* SceneDelegate.swift in Sources */,
+				528D77EE254678DA000FC383 /* ProfileView.swift in Sources */,
+				528D77D92546150C000FC383 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		528D77B525453CFD000FC383 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				528D77B625453CFD000FC383 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		528D77BA25453D02000FC383 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				528D77BB25453D02000FC383 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		528D77BE25453D02000FC383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		528D77BF25453D02000FC383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		528D77C125453D02000FC383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F6B756D6A56C1C4D3FCDF81 /* Pods-TinderLikeUI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XWYBXAANR7;
+				INFOPLIST_FILE = "TinderLikeUI/Support Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MiltonPalaguachi.TinderLikeUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		528D77C225453D02000FC383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B7E5C07986ED26771FF8D7D /* Pods-TinderLikeUI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XWYBXAANR7;
+				INFOPLIST_FILE = "TinderLikeUI/Support Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MiltonPalaguachi.TinderLikeUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		528D77A725453CFD000FC383 /* Build configuration list for PBXProject "TinderLikeUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				528D77BE25453D02000FC383 /* Debug */,
+				528D77BF25453D02000FC383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		528D77C025453D02000FC383 /* Build configuration list for PBXNativeTarget "TinderLikeUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				528D77C125453D02000FC383 /* Debug */,
+				528D77C225453D02000FC383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 528D77A425453CFD000FC383 /* Project object */;
+}
