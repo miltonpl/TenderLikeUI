@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i5M-lK-qq3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XL3-lM-hxp">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TenderLikeUI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TinderLikeUI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,6 +116,71 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="112.5"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="UBz-7c-mV8">
+            <objects>
+                <viewController id="nHn-1G-Ada" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6nE-Fm-NrZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="jSb-dL-E8M"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="heart_" id="GwY-DA-YrJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fDi-fA-aPr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3028" y="1036"/>
+        </scene>
+        <!--Userslist View Controller-->
+        <scene sceneID="zzj-gH-jYW">
+            <objects>
+                <viewController id="W4q-z2-hYg" customClass="UserslistViewController" customModule="TinderLikeUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6sU-UY-neL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ha-qU-bWi" userLabel="ViewContainer" customClass="ViewContainer" customModule="TinderLikeUI" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="414" height="729"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8Ha-qU-bWi" firstAttribute="top" secondItem="Pm4-k1-SNS" secondAttribute="top" constant="20" id="2bh-HV-3FT"/>
+                            <constraint firstItem="Pm4-k1-SNS" firstAttribute="trailing" secondItem="8Ha-qU-bWi" secondAttribute="trailing" id="3vr-aF-Irg"/>
+                            <constraint firstItem="Pm4-k1-SNS" firstAttribute="bottom" secondItem="8Ha-qU-bWi" secondAttribute="bottom" constant="20" id="BtP-IS-6UW"/>
+                            <constraint firstItem="8Ha-qU-bWi" firstAttribute="leading" secondItem="Pm4-k1-SNS" secondAttribute="leading" id="gd9-ky-KGs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Pm4-k1-SNS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="tinder" id="6NF-ZM-dEV"/>
+                    <connections>
+                        <outlet property="viewContainer" destination="8Ha-qU-bWi" id="eOv-Uj-fnQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r1Q-S2-kwk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3028" y="388"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="zvt-9r-707">
+            <objects>
+                <tabBarController id="XL3-lM-hxp" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sdV-vZ-vR3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="W4q-z2-hYg" kind="relationship" relationship="viewControllers" id="SJU-XD-2B4"/>
+                        <segue destination="nHn-1G-Ada" kind="relationship" relationship="viewControllers" id="Che-YF-Q6v"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qKc-Ia-SRN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2107" y="710"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="pMc-wo-9mE">
             <objects>
@@ -137,6 +202,8 @@
     </scenes>
     <resources>
         <image name="annotationView" width="570" height="764"/>
+        <image name="heart_" width="25" height="25"/>
         <image name="thumbup" width="1024" height="958"/>
+        <image name="tinder" width="24" height="24"/>
     </resources>
 </document>

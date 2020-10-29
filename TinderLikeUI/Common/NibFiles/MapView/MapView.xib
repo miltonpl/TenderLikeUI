@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapView" customModule="TinderLikeUI" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="fXS-aC-atc"/>
+                <outlet property="mapView" destination="n74-Ga-n9j" id="3E8-py-Dxr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="583"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="n74-Ga-n9j">
+                    <rect key="frame" x="0.0" y="44" width="414" height="539"/>
+                </mapView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="n74-Ga-n9j" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="0n2-Bc-NE5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="n74-Ga-n9j" secondAttribute="bottom" id="9G6-J5-LDN"/>
+                <constraint firstItem="n74-Ga-n9j" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="f4I-St-hqc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="n74-Ga-n9j" secondAttribute="trailing" id="vpK-Y9-X0k"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="121.73913043478262" y="4.3526785714285712"/>
+        </view>
+    </objects>
+</document>

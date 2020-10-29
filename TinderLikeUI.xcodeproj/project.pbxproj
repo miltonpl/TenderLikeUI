@@ -13,19 +13,30 @@
 		528D77B725453CFD000FC383 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528D77B525453CFD000FC383 /* Main.storyboard */; };
 		528D77B925453D02000FC383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 528D77B825453D02000FC383 /* Assets.xcassets */; };
 		528D77BC25453D02000FC383 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528D77BA25453D02000FC383 /* LaunchScreen.storyboard */; };
-		528D77CE254545EB000FC383 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77CD254545EB000FC383 /* UIViewX.swift */; };
-		528D77D125460813000FC383 /* CardViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77D025460813000FC383 /* CardViewDataSource.swift */; };
+		528D77D125460813000FC383 /* UserViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77D025460813000FC383 /* UserViewDataSource.swift */; };
 		528D77D3254609A4000FC383 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77D2254609A4000FC383 /* CardView.swift */; };
 		528D77D6254612FF000FC383 /* ServiceManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77D5254612FF000FC383 /* ServiceManger.swift */; };
 		528D77D92546150C000FC383 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77D82546150C000FC383 /* Constants.swift */; };
-		528D77DF254641E3000FC383 /* PersonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 528D77DE254641E3000FC383 /* PersonView.xib */; };
-		528D77E1254641F7000FC383 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77E0254641F7000FC383 /* PersonView.swift */; };
+		528D77DF254641E3000FC383 /* SwipeableCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 528D77DE254641E3000FC383 /* SwipeableCustomView.xib */; };
+		528D77E1254641F7000FC383 /* SwipeableCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77E0254641F7000FC383 /* SwipeableCustomView.swift */; };
 		528D77E325464521000FC383 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77E225464521000FC383 /* UIView+Ext.swift */; };
 		528D77EE254678DA000FC383 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77ED254678DA000FC383 /* ProfileView.swift */; };
 		528D77F0254678FB000FC383 /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 528D77EF254678FB000FC383 /* ProfileView.xib */; };
 		528D77F225467EE9000FC383 /* CalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 528D77F125467EE9000FC383 /* CalendarView.xib */; };
 		528D77F425467EFC000FC383 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77F325467EFC000FC383 /* CalendarView.swift */; };
 		528D77F6254688ED000FC383 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77F5254688ED000FC383 /* UIImageView+Ext.swift */; };
+		528D77FA2547398F000FC383 /* SwipeableUserViewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77F92547398F000FC383 /* SwipeableUserViewCard.swift */; };
+		528D77FD25473CD7000FC383 /* NibFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77FC25473CD7000FC383 /* NibFile.swift */; };
+		528D77FF25473EA6000FC383 /* SwipeableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77FE25473EA6000FC383 /* SwipeableView.swift */; };
+		528D7801254752B2000FC383 /* ViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D7800254752B2000FC383 /* ViewContainer.swift */; };
+		529E27BC2547B4EE006230FA /* UserslistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E27BB2547B4EE006230FA /* UserslistViewController.swift */; };
+		529E27E62548C813006230FA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E27E52548C813006230FA /* MapView.swift */; };
+		529E27E82548C822006230FA /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529E27E72548C822006230FA /* MapView.xib */; };
+		529E27EA2548C83F006230FA /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E27E92548C83F006230FA /* LockView.swift */; };
+		529E27EC2548C84C006230FA /* LockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529E27EB2548C84C006230FA /* LockView.xib */; };
+		529E27EE25490727006230FA /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E27ED25490727006230FA /* Helper.swift */; };
+		529E27F125494EA1006230FA /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E27F025494EA1006230FA /* ContactView.swift */; };
+		529E27F325494EB2006230FA /* ContactView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529E27F225494EB2006230FA /* ContactView.xib */; };
 		89D775BC3AC68351ED16CD90 /* Pods_TinderLikeUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD9295F9122A8E93A388A97 /* Pods_TinderLikeUI.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,19 +52,30 @@
 		528D77B825453D02000FC383 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		528D77BB25453D02000FC383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		528D77BD25453D02000FC383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		528D77CD254545EB000FC383 /* UIViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
-		528D77D025460813000FC383 /* CardViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewDataSource.swift; sourceTree = "<group>"; };
+		528D77D025460813000FC383 /* UserViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewDataSource.swift; sourceTree = "<group>"; };
 		528D77D2254609A4000FC383 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		528D77D5254612FF000FC383 /* ServiceManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManger.swift; sourceTree = "<group>"; };
 		528D77D82546150C000FC383 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		528D77DE254641E3000FC383 /* PersonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonView.xib; sourceTree = "<group>"; };
-		528D77E0254641F7000FC383 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		528D77DE254641E3000FC383 /* SwipeableCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwipeableCustomView.xib; sourceTree = "<group>"; };
+		528D77E0254641F7000FC383 /* SwipeableCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableCustomView.swift; sourceTree = "<group>"; };
 		528D77E225464521000FC383 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		528D77ED254678DA000FC383 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		528D77EF254678FB000FC383 /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
 		528D77F125467EE9000FC383 /* CalendarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarView.xib; sourceTree = "<group>"; };
 		528D77F325467EFC000FC383 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		528D77F5254688ED000FC383 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+		528D77F92547398F000FC383 /* SwipeableUserViewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableUserViewCard.swift; sourceTree = "<group>"; };
+		528D77FC25473CD7000FC383 /* NibFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibFile.swift; sourceTree = "<group>"; };
+		528D77FE25473EA6000FC383 /* SwipeableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableView.swift; sourceTree = "<group>"; };
+		528D7800254752B2000FC383 /* ViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContainer.swift; sourceTree = "<group>"; };
+		529E27BB2547B4EE006230FA /* UserslistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserslistViewController.swift; sourceTree = "<group>"; };
+		529E27E52548C813006230FA /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		529E27E72548C822006230FA /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
+		529E27E92548C83F006230FA /* LockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
+		529E27EB2548C84C006230FA /* LockView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LockView.xib; sourceTree = "<group>"; };
+		529E27ED25490727006230FA /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		529E27F025494EA1006230FA /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		529E27F225494EB2006230FA /* ContactView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +111,7 @@
 		528D77AE25453CFD000FC383 /* TinderLikeUI */ = {
 			isa = PBXGroup;
 			children = (
+				528D77CB25453DED000FC383 /* Controller */,
 				528D77DA254615D4000FC383 /* Common */,
 				528D77C525453D0F000FC383 /* Screens */,
 				528D77C425453D0F000FC383 /* Storyboard */,
@@ -120,8 +143,7 @@
 		528D77C525453D0F000FC383 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				528D77EC25467883000FC383 /* NibFiles */,
-				528D77CB25453DED000FC383 /* Controller */,
+				529E27B82547B499006230FA /* UsersList */,
 				528D77CA25453DA1000FC383 /* ViewModel */,
 				528D77C925453DA1000FC383 /* Model */,
 				528D77C625453D0F000FC383 /* View */,
@@ -132,8 +154,8 @@
 		528D77C625453D0F000FC383 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				528D77DE254641E3000FC383 /* PersonView.xib */,
-				528D77E0254641F7000FC383 /* PersonView.swift */,
+				529E27BE2547F6D7006230FA /* SwipeableView */,
+				529E27BD2547EE9B006230FA /* CustomView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -141,17 +163,9 @@
 		528D77C725453D10000FC383 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				528D77C825453D10000FC383 /* New Group */,
+				529E27ED25490727006230FA /* Helper.swift */,
 			);
 			path = Helper;
-			sourceTree = "<group>";
-		};
-		528D77C825453D10000FC383 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-				528D77CD254545EB000FC383 /* UIViewX.swift */,
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		528D77C925453DA1000FC383 /* Model */ = {
@@ -165,7 +179,7 @@
 		528D77CA25453DA1000FC383 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				528D77D025460813000FC383 /* CardViewDataSource.swift */,
+				528D77D025460813000FC383 /* UserViewDataSource.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -206,6 +220,8 @@
 		528D77DA254615D4000FC383 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				528D77EC25467883000FC383 /* NibFiles */,
+				528D77FB25473CB7000FC383 /* Protocols */,
 				528D77C725453D10000FC383 /* Helper */,
 				528D77CC25453E0F000FC383 /* Extensions */,
 				528D77D4254612CA000FC383 /* ServiceManager */,
@@ -232,16 +248,11 @@
 			path = CalendarView;
 			sourceTree = "<group>";
 		};
-		528D77E9254677E4000FC383 /* CAllView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CAllView;
-			sourceTree = "<group>";
-		};
 		528D77EA2546782F000FC383 /* LockView */ = {
 			isa = PBXGroup;
 			children = (
+				529E27E92548C83F006230FA /* LockView.swift */,
+				529E27EB2548C84C006230FA /* LockView.xib */,
 			);
 			path = LockView;
 			sourceTree = "<group>";
@@ -249,6 +260,8 @@
 		528D77EB25467846000FC383 /* MapView */ = {
 			isa = PBXGroup;
 			children = (
+				529E27E52548C813006230FA /* MapView.swift */,
+				529E27E72548C822006230FA /* MapView.xib */,
 			);
 			path = MapView;
 			sourceTree = "<group>";
@@ -256,13 +269,65 @@
 		528D77EC25467883000FC383 /* NibFiles */ = {
 			isa = PBXGroup;
 			children = (
+				529E27EF25494E79006230FA /* ContactView */,
 				528D77E7254677E4000FC383 /* ProfileView */,
 				528D77E8254677E4000FC383 /* CalendarView */,
-				528D77E9254677E4000FC383 /* CAllView */,
 				528D77EB25467846000FC383 /* MapView */,
 				528D77EA2546782F000FC383 /* LockView */,
 			);
 			path = NibFiles;
+			sourceTree = "<group>";
+		};
+		528D77FB25473CB7000FC383 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				528D77FC25473CD7000FC383 /* NibFile.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		529E27B82547B499006230FA /* UsersList */ = {
+			isa = PBXGroup;
+			children = (
+				529E27B92547B4AE006230FA /* Controller */,
+			);
+			path = UsersList;
+			sourceTree = "<group>";
+		};
+		529E27B92547B4AE006230FA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				529E27BB2547B4EE006230FA /* UserslistViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		529E27BD2547EE9B006230FA /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				528D77E0254641F7000FC383 /* SwipeableCustomView.swift */,
+				528D77DE254641E3000FC383 /* SwipeableCustomView.xib */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		529E27BE2547F6D7006230FA /* SwipeableView */ = {
+			isa = PBXGroup;
+			children = (
+				528D7800254752B2000FC383 /* ViewContainer.swift */,
+				528D77FE25473EA6000FC383 /* SwipeableView.swift */,
+				528D77F92547398F000FC383 /* SwipeableUserViewCard.swift */,
+			);
+			path = SwipeableView;
+			sourceTree = "<group>";
+		};
+		529E27EF25494E79006230FA /* ContactView */ = {
+			isa = PBXGroup;
+			children = (
+				529E27F025494EA1006230FA /* ContactView.swift */,
+				529E27F225494EB2006230FA /* ContactView.xib */,
+			);
+			path = ContactView;
 			sourceTree = "<group>";
 		};
 		954CE7BE59EA2907EB2A6402 /* Frameworks */ = {
@@ -344,11 +409,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				528D77BC25453D02000FC383 /* LaunchScreen.storyboard in Resources */,
+				529E27EC2548C84C006230FA /* LockView.xib in Resources */,
+				529E27F325494EB2006230FA /* ContactView.xib in Resources */,
 				528D77F0254678FB000FC383 /* ProfileView.xib in Resources */,
-				528D77DF254641E3000FC383 /* PersonView.xib in Resources */,
+				528D77DF254641E3000FC383 /* SwipeableCustomView.xib in Resources */,
 				528D77B925453D02000FC383 /* Assets.xcassets in Resources */,
 				528D77F225467EE9000FC383 /* CalendarView.xib in Resources */,
 				528D77B725453CFD000FC383 /* Main.storyboard in Resources */,
+				529E27E82548C822006230FA /* MapView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,16 +486,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				528D77E1254641F7000FC383 /* PersonView.swift in Sources */,
-				528D77D125460813000FC383 /* CardViewDataSource.swift in Sources */,
+				528D77E1254641F7000FC383 /* SwipeableCustomView.swift in Sources */,
+				528D77D125460813000FC383 /* UserViewDataSource.swift in Sources */,
+				528D77FF25473EA6000FC383 /* SwipeableView.swift in Sources */,
 				528D77F425467EFC000FC383 /* CalendarView.swift in Sources */,
+				529E27F125494EA1006230FA /* ContactView.swift in Sources */,
 				528D77E325464521000FC383 /* UIView+Ext.swift in Sources */,
 				528D77B425453CFD000FC383 /* ViewController.swift in Sources */,
-				528D77CE254545EB000FC383 /* UIViewX.swift in Sources */,
 				528D77B025453CFD000FC383 /* AppDelegate.swift in Sources */,
+				529E27EE25490727006230FA /* Helper.swift in Sources */,
+				528D7801254752B2000FC383 /* ViewContainer.swift in Sources */,
+				528D77FD25473CD7000FC383 /* NibFile.swift in Sources */,
 				528D77D3254609A4000FC383 /* CardView.swift in Sources */,
+				529E27BC2547B4EE006230FA /* UserslistViewController.swift in Sources */,
+				528D77FA2547398F000FC383 /* SwipeableUserViewCard.swift in Sources */,
+				529E27EA2548C83F006230FA /* LockView.swift in Sources */,
 				528D77F6254688ED000FC383 /* UIImageView+Ext.swift in Sources */,
 				528D77D6254612FF000FC383 /* ServiceManger.swift in Sources */,
+				529E27E62548C813006230FA /* MapView.swift in Sources */,
 				528D77B225453CFD000FC383 /* SceneDelegate.swift in Sources */,
 				528D77EE254678DA000FC383 /* ProfileView.swift in Sources */,
 				528D77D92546150C000FC383 /* Constants.swift in Sources */,

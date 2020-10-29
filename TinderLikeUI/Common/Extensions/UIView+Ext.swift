@@ -57,3 +57,20 @@ extension UIView {
     }
     
 }
+extension UIView {
+    
+    func xibSetup (nibName: String) {
+           backgroundColor = .clear
+           let view = loadViewFrom(nibName: nibName)
+           addEdgeConstrainedSubView(view: view)
+       }
+   
+    //load a view form it's xib file
+    func loadViewFrom<T: UIView>(nibName: String) -> T {
+        let nib = UINib(nibName: nibName, bundle: nil)
+        guard let view = nib.instantiate(withOwner: nil, options: nil).first as? T else {
+             fatalError("Cannot instantiate a UIView from PesonView Class: PersonView.xib")
+        }
+        return view
+    }
+}
