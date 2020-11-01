@@ -17,8 +17,9 @@ struct Helper {
         dateFormatter.timeZone = NSTimeZone(name: "UTC") as TimeZone?
         let date = dateFormatter.date(from: date)
         //this is what you want to convert format
-        dateFormatter.dateFormat = "yyyy MMM EEEE HH:mm"
-        dateFormatter.timeZone = NSTimeZone(name: "UTC") as TimeZone?
+//        dateFormatter.dateFormat = "yyyy MMM EEEE HH:mm"
+        dateFormatter.dateFormat = "yyyy MMM"
+//        dateFormatter.timeZone = NSTimeZone(name: "UTC") as TimeZone?
         let timeStamp = dateFormatter.string(from: date!)
         return timeStamp
     }

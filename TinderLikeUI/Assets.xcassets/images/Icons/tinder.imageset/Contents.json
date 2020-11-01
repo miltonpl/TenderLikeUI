@@ -1,11 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "icons8-tinder.png",
+      "filename" : "icons8-tinder-1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "icons8-tinder.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

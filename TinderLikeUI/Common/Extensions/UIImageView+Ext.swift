@@ -16,7 +16,7 @@ extension UIImageView {
             if error != nil {
                 self.image = image
             } else {
-                print(error ?? "It cannot print error")
+//                print(error ?? "It cannot print error")
             }
         }
     }

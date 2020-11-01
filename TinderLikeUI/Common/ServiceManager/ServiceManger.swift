@@ -11,7 +11,8 @@ enum CustomError: Error {
     case serverError
     case decodingFailed
 }
-
+// MARK: - ServiceManager
+// Service Manager Class gets a list of user form url and decodes using sing JSONDecoder
 class ServiceManager {
     
     static let manager = ServiceManager()

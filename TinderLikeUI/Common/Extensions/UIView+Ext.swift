@@ -58,7 +58,7 @@ extension UIView {
     
 }
 extension UIView {
-    
+
     func xibSetup (nibName: String) {
            backgroundColor = .clear
            let view = loadViewFrom(nibName: nibName)

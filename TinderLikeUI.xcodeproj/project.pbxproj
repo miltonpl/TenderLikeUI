@@ -7,36 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		522F1601254B54F300695100 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F1600254B54F300695100 /* DBManager.swift */; };
+		522F1603254B564200695100 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 522F1602254B564200695100 /* libsqlite3.0.tbd */; };
+		522F1605254B576600695100 /* StoredUserData.db in Resources */ = {isa = PBXBuildFile; fileRef = 522F1604254B576600695100 /* StoredUserData.db */; };
+		522F1609254BE18200695100 /* CustomViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F1608254BE18200695100 /* CustomViewHandler.swift */; };
+		522F160B254BE95C00695100 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F160A254BE95C00695100 /* CustomView.swift */; };
+		522F160D254BEA1200695100 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522F160C254BEA1200695100 /* CustomView.xib */; };
+		522F1610254C79B500695100 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F160E254C79B500695100 /* ContactTableViewCell.swift */; };
+		522F1611254C79B500695100 /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522F160F254C79B500695100 /* ContactTableViewCell.xib */; };
+		52424F7C254E05810057BF79 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52424F7B254E05810057BF79 /* Contact.swift */; };
+		52424F82254E66110057BF79 /* InformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52424F80254E66110057BF79 /* InformationTableViewCell.swift */; };
+		52424F83254E66110057BF79 /* InformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52424F81254E66110057BF79 /* InformationTableViewCell.xib */; };
+		52424F87254F3E8D0057BF79 /* UnlockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52424F85254F3E8D0057BF79 /* UnlockTableViewCell.swift */; };
+		52424F88254F3E8D0057BF79 /* UnlockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52424F86254F3E8D0057BF79 /* UnlockTableViewCell.xib */; };
 		528D77B025453CFD000FC383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77AF25453CFD000FC383 /* AppDelegate.swift */; };
 		528D77B225453CFD000FC383 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77B125453CFD000FC383 /* SceneDelegate.swift */; };
 		528D77B425453CFD000FC383 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77B325453CFD000FC383 /* ViewController.swift */; };
 		528D77B725453CFD000FC383 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528D77B525453CFD000FC383 /* Main.storyboard */; };
 		528D77B925453D02000FC383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 528D77B825453D02000FC383 /* Assets.xcassets */; };
 		528D77BC25453D02000FC383 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528D77BA25453D02000FC383 /* LaunchScreen.storyboard */; };
-		528D77D125460813000FC383 /* UserViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77D025460813000FC383 /* UserViewDataSource.swift */; };
-		528D77D3254609A4000FC383 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77D2254609A4000FC383 /* CardView.swift */; };
+		528D77D125460813000FC383 /* UsersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77D025460813000FC383 /* UsersDataSource.swift */; };
+		528D77D3254609A4000FC383 /* RandomUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77D2254609A4000FC383 /* RandomUsers.swift */; };
 		528D77D6254612FF000FC383 /* ServiceManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77D5254612FF000FC383 /* ServiceManger.swift */; };
 		528D77D92546150C000FC383 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77D82546150C000FC383 /* Constants.swift */; };
-		528D77DF254641E3000FC383 /* SwipeableCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 528D77DE254641E3000FC383 /* SwipeableCustomView.xib */; };
-		528D77E1254641F7000FC383 /* SwipeableCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77E0254641F7000FC383 /* SwipeableCustomView.swift */; };
 		528D77E325464521000FC383 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77E225464521000FC383 /* UIView+Ext.swift */; };
 		528D77EE254678DA000FC383 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77ED254678DA000FC383 /* ProfileView.swift */; };
 		528D77F0254678FB000FC383 /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 528D77EF254678FB000FC383 /* ProfileView.xib */; };
-		528D77F225467EE9000FC383 /* CalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 528D77F125467EE9000FC383 /* CalendarView.xib */; };
-		528D77F425467EFC000FC383 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77F325467EFC000FC383 /* CalendarView.swift */; };
+		528D77F225467EE9000FC383 /* InformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 528D77F125467EE9000FC383 /* InformationView.xib */; };
+		528D77F425467EFC000FC383 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77F325467EFC000FC383 /* InformationView.swift */; };
 		528D77F6254688ED000FC383 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77F5254688ED000FC383 /* UIImageView+Ext.swift */; };
-		528D77FA2547398F000FC383 /* SwipeableUserViewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77F92547398F000FC383 /* SwipeableUserViewCard.swift */; };
 		528D77FD25473CD7000FC383 /* NibFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77FC25473CD7000FC383 /* NibFile.swift */; };
 		528D77FF25473EA6000FC383 /* SwipeableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D77FE25473EA6000FC383 /* SwipeableView.swift */; };
-		528D7801254752B2000FC383 /* ViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D7800254752B2000FC383 /* ViewContainer.swift */; };
 		529E27BC2547B4EE006230FA /* UserslistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E27BB2547B4EE006230FA /* UserslistViewController.swift */; };
 		529E27E62548C813006230FA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E27E52548C813006230FA /* MapView.swift */; };
 		529E27E82548C822006230FA /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529E27E72548C822006230FA /* MapView.xib */; };
-		529E27EA2548C83F006230FA /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E27E92548C83F006230FA /* LockView.swift */; };
-		529E27EC2548C84C006230FA /* LockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529E27EB2548C84C006230FA /* LockView.xib */; };
+		529E27EA2548C83F006230FA /* UnlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E27E92548C83F006230FA /* UnlockView.swift */; };
+		529E27EC2548C84C006230FA /* UnlockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529E27EB2548C84C006230FA /* UnlockView.xib */; };
 		529E27EE25490727006230FA /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E27ED25490727006230FA /* Helper.swift */; };
 		529E27F125494EA1006230FA /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E27F025494EA1006230FA /* ContactView.swift */; };
 		529E27F325494EB2006230FA /* ContactView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529E27F225494EB2006230FA /* ContactView.xib */; };
+		529E2801254A9746006230FA /* AlertHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E2800254A9746006230FA /* AlertHandler.swift */; };
+		529E2803254A9761006230FA /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E2802254A9761006230FA /* LocationHandler.swift */; };
+		529E2805254A9863006230FA /* UIApplication+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E2804254A9863006230FA /* UIApplication+Ext.swift */; };
+		529E2807254ABF05006230FA /* MKMapView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E2806254ABF05006230FA /* MKMapView+Ext.swift */; };
+		529E280C254AD090006230FA /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E280B254AD090006230FA /* FavoritesViewController.swift */; };
+		529E280F254AD0D2006230FA /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E280D254AD0D2006230FA /* FavoriteTableViewCell.swift */; };
+		529E2810254AD0D2006230FA /* FavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529E280E254AD0D2006230FA /* FavoriteTableViewCell.xib */; };
+		529E2813254AD1DE006230FA /* FavoritesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E2812254AD1DE006230FA /* FavoritesModel.swift */; };
 		89D775BC3AC68351ED16CD90 /* Pods_TinderLikeUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD9295F9122A8E93A388A97 /* Pods_TinderLikeUI.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +61,19 @@
 		1DD9295F9122A8E93A388A97 /* Pods_TinderLikeUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinderLikeUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B7E5C07986ED26771FF8D7D /* Pods-TinderLikeUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderLikeUI.release.xcconfig"; path = "Target Support Files/Pods-TinderLikeUI/Pods-TinderLikeUI.release.xcconfig"; sourceTree = "<group>"; };
 		4F6B756D6A56C1C4D3FCDF81 /* Pods-TinderLikeUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderLikeUI.debug.xcconfig"; path = "Target Support Files/Pods-TinderLikeUI/Pods-TinderLikeUI.debug.xcconfig"; sourceTree = "<group>"; };
+		522F1600254B54F300695100 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		522F1602254B564200695100 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		522F1604254B576600695100 /* StoredUserData.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = StoredUserData.db; path = DBFolder/StoredUserData.db; sourceTree = SOURCE_ROOT; };
+		522F1608254BE18200695100 /* CustomViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewHandler.swift; sourceTree = "<group>"; };
+		522F160A254BE95C00695100 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		522F160C254BEA1200695100 /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		522F160E254C79B500695100 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		522F160F254C79B500695100 /* ContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
+		52424F7B254E05810057BF79 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		52424F80254E66110057BF79 /* InformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationTableViewCell.swift; sourceTree = "<group>"; };
+		52424F81254E66110057BF79 /* InformationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationTableViewCell.xib; sourceTree = "<group>"; };
+		52424F85254F3E8D0057BF79 /* UnlockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockTableViewCell.swift; sourceTree = "<group>"; };
+		52424F86254F3E8D0057BF79 /* UnlockTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnlockTableViewCell.xib; sourceTree = "<group>"; };
 		528D77AC25453CFD000FC383 /* TinderLikeUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderLikeUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		528D77AF25453CFD000FC383 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		528D77B125453CFD000FC383 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,30 +82,34 @@
 		528D77B825453D02000FC383 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		528D77BB25453D02000FC383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		528D77BD25453D02000FC383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		528D77D025460813000FC383 /* UserViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewDataSource.swift; sourceTree = "<group>"; };
-		528D77D2254609A4000FC383 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		528D77D025460813000FC383 /* UsersDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersDataSource.swift; sourceTree = "<group>"; };
+		528D77D2254609A4000FC383 /* RandomUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUsers.swift; sourceTree = "<group>"; };
 		528D77D5254612FF000FC383 /* ServiceManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManger.swift; sourceTree = "<group>"; };
 		528D77D82546150C000FC383 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		528D77DE254641E3000FC383 /* SwipeableCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwipeableCustomView.xib; sourceTree = "<group>"; };
-		528D77E0254641F7000FC383 /* SwipeableCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableCustomView.swift; sourceTree = "<group>"; };
 		528D77E225464521000FC383 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		528D77ED254678DA000FC383 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		528D77EF254678FB000FC383 /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
-		528D77F125467EE9000FC383 /* CalendarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarView.xib; sourceTree = "<group>"; };
-		528D77F325467EFC000FC383 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		528D77F125467EE9000FC383 /* InformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationView.xib; sourceTree = "<group>"; };
+		528D77F325467EFC000FC383 /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		528D77F5254688ED000FC383 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
-		528D77F92547398F000FC383 /* SwipeableUserViewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableUserViewCard.swift; sourceTree = "<group>"; };
 		528D77FC25473CD7000FC383 /* NibFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibFile.swift; sourceTree = "<group>"; };
 		528D77FE25473EA6000FC383 /* SwipeableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableView.swift; sourceTree = "<group>"; };
-		528D7800254752B2000FC383 /* ViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContainer.swift; sourceTree = "<group>"; };
 		529E27BB2547B4EE006230FA /* UserslistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserslistViewController.swift; sourceTree = "<group>"; };
 		529E27E52548C813006230FA /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		529E27E72548C822006230FA /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
-		529E27E92548C83F006230FA /* LockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
-		529E27EB2548C84C006230FA /* LockView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LockView.xib; sourceTree = "<group>"; };
+		529E27E92548C83F006230FA /* UnlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockView.swift; sourceTree = "<group>"; };
+		529E27EB2548C84C006230FA /* UnlockView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnlockView.xib; sourceTree = "<group>"; };
 		529E27ED25490727006230FA /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		529E27F025494EA1006230FA /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		529E27F225494EB2006230FA /* ContactView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactView.xib; sourceTree = "<group>"; };
+		529E2800254A9746006230FA /* AlertHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHandler.swift; sourceTree = "<group>"; };
+		529E2802254A9761006230FA /* LocationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHandler.swift; sourceTree = "<group>"; };
+		529E2804254A9863006230FA /* UIApplication+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Ext.swift"; sourceTree = "<group>"; };
+		529E2806254ABF05006230FA /* MKMapView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Ext.swift"; sourceTree = "<group>"; };
+		529E280B254AD090006230FA /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		529E280D254AD0D2006230FA /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		529E280E254AD0D2006230FA /* FavoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteTableViewCell.xib; sourceTree = "<group>"; };
+		529E2812254AD1DE006230FA /* FavoritesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				522F1603254B564200695100 /* libsqlite3.0.tbd in Frameworks */,
 				89D775BC3AC68351ED16CD90 /* Pods_TinderLikeUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +125,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		522F15FF254B54D100695100 /* DBManager */ = {
+			isa = PBXGroup;
+			children = (
+				522F1604254B576600695100 /* StoredUserData.db */,
+				522F1600254B54F300695100 /* DBManager.swift */,
+			);
+			path = DBManager;
+			sourceTree = "<group>";
+		};
+		522F1612254C79BF00695100 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				522F160F254C79B500695100 /* ContactTableViewCell.xib */,
+				522F160E254C79B500695100 /* ContactTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52424F79254E04F80057BF79 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				529E27F225494EB2006230FA /* ContactView.xib */,
+				529E27F025494EA1006230FA /* ContactView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52424F7A254E05680057BF79 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52424F7B254E05810057BF79 /* Contact.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52424F7E254E60700057BF79 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				528D77F325467EFC000FC383 /* InformationView.swift */,
+				528D77F125467EE9000FC383 /* InformationView.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52424F7F254E65D30057BF79 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52424F80254E66110057BF79 /* InformationTableViewCell.swift */,
+				52424F81254E66110057BF79 /* InformationTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52424F84254F3E6C0057BF79 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52424F85254F3E8D0057BF79 /* UnlockTableViewCell.swift */,
+				52424F86254F3E8D0057BF79 /* UnlockTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52424F89254F61720057BF79 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				529E27EB2548C84C006230FA /* UnlockView.xib */,
+				529E27E92548C83F006230FA /* UnlockView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		528D77A325453CFD000FC383 = {
 			isa = PBXGroup;
 			children = (
@@ -143,10 +249,8 @@
 		528D77C525453D0F000FC383 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				529E2808254AD03C006230FA /* Favorites */,
 				529E27B82547B499006230FA /* UsersList */,
-				528D77CA25453DA1000FC383 /* ViewModel */,
-				528D77C925453DA1000FC383 /* Model */,
-				528D77C625453D0F000FC383 /* View */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -154,8 +258,8 @@
 		528D77C625453D0F000FC383 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				529E27BE2547F6D7006230FA /* SwipeableView */,
-				529E27BD2547EE9B006230FA /* CustomView */,
+				522F160C254BEA1200695100 /* CustomView.xib */,
+				522F160A254BE95C00695100 /* CustomView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,7 +275,7 @@
 		528D77C925453DA1000FC383 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				528D77D2254609A4000FC383 /* CardView.swift */,
+				528D77D2254609A4000FC383 /* RandomUsers.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -179,7 +283,8 @@
 		528D77CA25453DA1000FC383 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				528D77D025460813000FC383 /* UserViewDataSource.swift */,
+				522F1608254BE18200695100 /* CustomViewHandler.swift */,
+				528D77D025460813000FC383 /* UsersDataSource.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -197,6 +302,8 @@
 			children = (
 				528D77E225464521000FC383 /* UIView+Ext.swift */,
 				528D77F5254688ED000FC383 /* UIImageView+Ext.swift */,
+				529E2804254A9863006230FA /* UIApplication+Ext.swift */,
+				529E2806254ABF05006230FA /* MKMapView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -220,7 +327,11 @@
 		528D77DA254615D4000FC383 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				528D77EC25467883000FC383 /* NibFiles */,
+				522F15FF254B54D100695100 /* DBManager */,
+				529E27BE2547F6D7006230FA /* SwipeableView */,
+				529E27FF254A972B006230FA /* AlertHandler */,
+				529E27FE254A9712006230FA /* LocationHandler */,
+				528D77EC25467883000FC383 /* ViewFiles */,
 				528D77FB25473CB7000FC383 /* Protocols */,
 				528D77C725453D10000FC383 /* Helper */,
 				528D77CC25453E0F000FC383 /* Extensions */,
@@ -239,22 +350,22 @@
 			path = ProfileView;
 			sourceTree = "<group>";
 		};
-		528D77E8254677E4000FC383 /* CalendarView */ = {
+		528D77E8254677E4000FC383 /* InformationView */ = {
 			isa = PBXGroup;
 			children = (
-				528D77F125467EE9000FC383 /* CalendarView.xib */,
-				528D77F325467EFC000FC383 /* CalendarView.swift */,
+				52424F7F254E65D30057BF79 /* View */,
+				52424F7E254E60700057BF79 /* Controller */,
 			);
-			path = CalendarView;
+			path = InformationView;
 			sourceTree = "<group>";
 		};
-		528D77EA2546782F000FC383 /* LockView */ = {
+		528D77EA2546782F000FC383 /* UnlockView */ = {
 			isa = PBXGroup;
 			children = (
-				529E27E92548C83F006230FA /* LockView.swift */,
-				529E27EB2548C84C006230FA /* LockView.xib */,
+				52424F89254F61720057BF79 /* Controller */,
+				52424F84254F3E6C0057BF79 /* View */,
 			);
-			path = LockView;
+			path = UnlockView;
 			sourceTree = "<group>";
 		};
 		528D77EB25467846000FC383 /* MapView */ = {
@@ -266,16 +377,16 @@
 			path = MapView;
 			sourceTree = "<group>";
 		};
-		528D77EC25467883000FC383 /* NibFiles */ = {
+		528D77EC25467883000FC383 /* ViewFiles */ = {
 			isa = PBXGroup;
 			children = (
 				529E27EF25494E79006230FA /* ContactView */,
 				528D77E7254677E4000FC383 /* ProfileView */,
-				528D77E8254677E4000FC383 /* CalendarView */,
+				528D77E8254677E4000FC383 /* InformationView */,
 				528D77EB25467846000FC383 /* MapView */,
-				528D77EA2546782F000FC383 /* LockView */,
+				528D77EA2546782F000FC383 /* UnlockView */,
 			);
-			path = NibFiles;
+			path = ViewFiles;
 			sourceTree = "<group>";
 		};
 		528D77FB25473CB7000FC383 /* Protocols */ = {
@@ -289,6 +400,9 @@
 		529E27B82547B499006230FA /* UsersList */ = {
 			isa = PBXGroup;
 			children = (
+				528D77C925453DA1000FC383 /* Model */,
+				528D77C625453D0F000FC383 /* View */,
+				528D77CA25453DA1000FC383 /* ViewModel */,
 				529E27B92547B4AE006230FA /* Controller */,
 			);
 			path = UsersList;
@@ -302,21 +416,10 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		529E27BD2547EE9B006230FA /* CustomView */ = {
-			isa = PBXGroup;
-			children = (
-				528D77E0254641F7000FC383 /* SwipeableCustomView.swift */,
-				528D77DE254641E3000FC383 /* SwipeableCustomView.xib */,
-			);
-			path = CustomView;
-			sourceTree = "<group>";
-		};
 		529E27BE2547F6D7006230FA /* SwipeableView */ = {
 			isa = PBXGroup;
 			children = (
-				528D7800254752B2000FC383 /* ViewContainer.swift */,
 				528D77FE25473EA6000FC383 /* SwipeableView.swift */,
-				528D77F92547398F000FC383 /* SwipeableUserViewCard.swift */,
 			);
 			path = SwipeableView;
 			sourceTree = "<group>";
@@ -324,15 +427,68 @@
 		529E27EF25494E79006230FA /* ContactView */ = {
 			isa = PBXGroup;
 			children = (
-				529E27F025494EA1006230FA /* ContactView.swift */,
-				529E27F225494EB2006230FA /* ContactView.xib */,
+				52424F7A254E05680057BF79 /* Model */,
+				52424F79254E04F80057BF79 /* Controller */,
+				522F1612254C79BF00695100 /* View */,
 			);
 			path = ContactView;
+			sourceTree = "<group>";
+		};
+		529E27FE254A9712006230FA /* LocationHandler */ = {
+			isa = PBXGroup;
+			children = (
+				529E2802254A9761006230FA /* LocationHandler.swift */,
+			);
+			path = LocationHandler;
+			sourceTree = "<group>";
+		};
+		529E27FF254A972B006230FA /* AlertHandler */ = {
+			isa = PBXGroup;
+			children = (
+				529E2800254A9746006230FA /* AlertHandler.swift */,
+			);
+			path = AlertHandler;
+			sourceTree = "<group>";
+		};
+		529E2808254AD03C006230FA /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				529E2811254AD1C2006230FA /* Model */,
+				529E280A254AD064006230FA /* View */,
+				529E2809254AD05A006230FA /* Controller */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		529E2809254AD05A006230FA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				529E280B254AD090006230FA /* FavoritesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		529E280A254AD064006230FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				529E280D254AD0D2006230FA /* FavoriteTableViewCell.swift */,
+				529E280E254AD0D2006230FA /* FavoriteTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		529E2811254AD1C2006230FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				529E2812254AD1DE006230FA /* FavoritesModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		954CE7BE59EA2907EB2A6402 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				522F1602254B564200695100 /* libsqlite3.0.tbd */,
 				1DD9295F9122A8E93A388A97 /* Pods_TinderLikeUI.framework */,
 			);
 			name = Frameworks;
@@ -408,15 +564,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				522F1611254C79B500695100 /* ContactTableViewCell.xib in Resources */,
+				52424F83254E66110057BF79 /* InformationTableViewCell.xib in Resources */,
 				528D77BC25453D02000FC383 /* LaunchScreen.storyboard in Resources */,
-				529E27EC2548C84C006230FA /* LockView.xib in Resources */,
+				529E27EC2548C84C006230FA /* UnlockView.xib in Resources */,
 				529E27F325494EB2006230FA /* ContactView.xib in Resources */,
 				528D77F0254678FB000FC383 /* ProfileView.xib in Resources */,
-				528D77DF254641E3000FC383 /* SwipeableCustomView.xib in Resources */,
+				522F160D254BEA1200695100 /* CustomView.xib in Resources */,
+				52424F88254F3E8D0057BF79 /* UnlockTableViewCell.xib in Resources */,
 				528D77B925453D02000FC383 /* Assets.xcassets in Resources */,
-				528D77F225467EE9000FC383 /* CalendarView.xib in Resources */,
+				528D77F225467EE9000FC383 /* InformationView.xib in Resources */,
+				529E2810254AD0D2006230FA /* FavoriteTableViewCell.xib in Resources */,
 				528D77B725453CFD000FC383 /* Main.storyboard in Resources */,
 				529E27E82548C822006230FA /* MapView.xib in Resources */,
+				522F1605254B576600695100 /* StoredUserData.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,27 +647,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				528D77E1254641F7000FC383 /* SwipeableCustomView.swift in Sources */,
-				528D77D125460813000FC383 /* UserViewDataSource.swift in Sources */,
+				529E280C254AD090006230FA /* FavoritesViewController.swift in Sources */,
+				529E2803254A9761006230FA /* LocationHandler.swift in Sources */,
+				529E2807254ABF05006230FA /* MKMapView+Ext.swift in Sources */,
+				522F1609254BE18200695100 /* CustomViewHandler.swift in Sources */,
+				528D77D125460813000FC383 /* UsersDataSource.swift in Sources */,
 				528D77FF25473EA6000FC383 /* SwipeableView.swift in Sources */,
-				528D77F425467EFC000FC383 /* CalendarView.swift in Sources */,
+				528D77F425467EFC000FC383 /* InformationView.swift in Sources */,
 				529E27F125494EA1006230FA /* ContactView.swift in Sources */,
 				528D77E325464521000FC383 /* UIView+Ext.swift in Sources */,
 				528D77B425453CFD000FC383 /* ViewController.swift in Sources */,
 				528D77B025453CFD000FC383 /* AppDelegate.swift in Sources */,
 				529E27EE25490727006230FA /* Helper.swift in Sources */,
-				528D7801254752B2000FC383 /* ViewContainer.swift in Sources */,
+				52424F7C254E05810057BF79 /* Contact.swift in Sources */,
+				529E280F254AD0D2006230FA /* FavoriteTableViewCell.swift in Sources */,
 				528D77FD25473CD7000FC383 /* NibFile.swift in Sources */,
-				528D77D3254609A4000FC383 /* CardView.swift in Sources */,
+				52424F87254F3E8D0057BF79 /* UnlockTableViewCell.swift in Sources */,
+				528D77D3254609A4000FC383 /* RandomUsers.swift in Sources */,
 				529E27BC2547B4EE006230FA /* UserslistViewController.swift in Sources */,
-				528D77FA2547398F000FC383 /* SwipeableUserViewCard.swift in Sources */,
-				529E27EA2548C83F006230FA /* LockView.swift in Sources */,
+				529E27EA2548C83F006230FA /* UnlockView.swift in Sources */,
+				529E2805254A9863006230FA /* UIApplication+Ext.swift in Sources */,
 				528D77F6254688ED000FC383 /* UIImageView+Ext.swift in Sources */,
+				522F160B254BE95C00695100 /* CustomView.swift in Sources */,
 				528D77D6254612FF000FC383 /* ServiceManger.swift in Sources */,
+				529E2801254A9746006230FA /* AlertHandler.swift in Sources */,
+				52424F82254E66110057BF79 /* InformationTableViewCell.swift in Sources */,
 				529E27E62548C813006230FA /* MapView.swift in Sources */,
 				528D77B225453CFD000FC383 /* SceneDelegate.swift in Sources */,
+				522F1601254B54F300695100 /* DBManager.swift in Sources */,
 				528D77EE254678DA000FC383 /* ProfileView.swift in Sources */,
 				528D77D92546150C000FC383 /* Constants.swift in Sources */,
+				529E2813254AD1DE006230FA /* FavoritesModel.swift in Sources */,
+				522F1610254C79B500695100 /* ContactTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

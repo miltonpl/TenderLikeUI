@@ -6,44 +6,84 @@
 //  Copyright © 2020 Milton. All rights reserved.
 //
 
+import MapKit
 import UIKit
 
 class UserslistViewController: UIViewController {
-    @IBOutlet private weak var viewContainer: ViewContainer!
-    private var viewModel = UserViewDataSource()
+    
+    @IBOutlet private weak var customViewHandler: CustomViewHandler!
+    
+    private var viewModel = UsersDataSource()
+    private lazy var locationHandler = LocationHandler(delegate: self)
     private var users = [Person]()
-
+    private var location: CLLocation?
+    private var currentUser: UserInfo?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewContainer.dataSourceProtocol = self
+        locationHandler.getUserLocation()
+        customViewHandler.delegate = self
         viewModel.delegate = self
-        viewModel.fetchData("3")
+        viewModel.fetchData("6")
+    }
+    
+    @IBAction func saveAction(_ sender: UIBarButtonItem) {
+        if let currentUser = self.currentUser {
+            do {
+                try DBManager.shared.insert(user: currentUser)
+            } catch {
+                print(error)
+            }
+        }
+    }
+    
+    @IBAction func dislikeAction(_ sender: UIBarButtonItem) {
+        customViewHandler.userToDequeue()
     }
 }
 
-extension UserslistViewController: UserViewDataSourceProtocol {
+extension UserslistViewController: UsersDataSourceDelegate {
     
+    func usersData(users: [Person]) {
+        self.users = users
+        customViewHandler.dataSourceProtocol = self
+    }
+}
+extension UserslistViewController: DataSouceProtocol {
     func numberOfUsers() -> Int {
         users.count
     }
     
-    func getUserView(at index: Int) -> SwipeableUserViewCard {
-        print("get User View: index:", index)
-        let customView = SwipeableCustomView()
-        customView.person =  users[index]
-        print(users[index].cell ?? "No cell")
+    func getUserView(at index: Int) -> CustomView {
+        let customView = CustomView()
+        customView.locationDelegate = self
+        customView.person = users[index]
         return customView
     }
     
     func viewForNoUser() -> UIView? {
-        return nil
+        nil
     }
 }
-extension UserslistViewController: UserViewDataSourceDelegate {
+
+extension UserslistViewController: MKMapViewDelegate, LocationHandlerProtocol {
+    func received(location: CLLocation) {
+        self.location = location
+    }
     
-    func usersData(users: [Person]) {
-        self.users = users
-        print("users count: ", users.count)
-        viewContainer.dataSourceProtocol = self
+    func locationDidFail(withError error: Error) {
+        print(error)
+    }
+}
+
+extension UserslistViewController: MapViewDelegate {
+    func getUserLocation() -> CLLocation? {
+        return location
+    }
+}
+
+extension UserslistViewController: CustomViewHandlerDelegate {
+    func userInQueue(frontUser: UserInfo) {
+        self.currentUser = frontUser
     }
 }

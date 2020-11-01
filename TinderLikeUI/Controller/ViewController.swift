@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     private var number: CGFloat = 1.0
     private var radians: CGFloat = 0.0
     private var centerX: CGFloat = 0.0
-    private var viewModel = UserViewDataSource()
+    private var viewModel = UsersDataSource()
     
     private var translation: CGPoint = .zero
     private var rotationAngle: CGFloat = CGFloat(Double.pi)/10.0

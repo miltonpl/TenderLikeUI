@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "icons8-synchronize.png",
+      "filename" : "icons8-repeat.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "icons8-repeat-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "icons8-repeat-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
