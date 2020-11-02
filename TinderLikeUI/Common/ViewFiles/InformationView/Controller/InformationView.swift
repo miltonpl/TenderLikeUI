@@ -24,6 +24,7 @@ class InformationView: UIView {
             self.tableView.rowHeight = 50
             self.tableView.isScrollEnabled = false
             self.tableView.allowsSelection = false
+            self.tableView.tableFooterView = UIView()
             self.tableView.register(InformationTableViewCell.nib(), forCellReuseIdentifier: InformationTableViewCell.identifier)
         }
     }
@@ -61,6 +62,8 @@ class InformationView: UIView {
         self.imageView.downloadImage(URL(string: strUrl))
         self.tableView.reloadData()
         self.imageView.layer.cornerRadius = self.imageView.frame.width/2
+        self.imageView.layer.borderWidth = 1
+        self.imageView.layer.borderColor = CustomCGColor.grey
     }
 }
 extension InformationView: UITableViewDelegate, UITableViewDataSource {

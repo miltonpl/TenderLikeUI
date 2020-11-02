@@ -41,7 +41,7 @@ class FavoritesViewController: UIViewController {
     
     func setupTabBarItem() {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Remove All", style: .plain, target: self, action: #selector(removeAllUser(_:)))
-        self.navigationItem.rightBarButtonItem?.tintColor = UIColor(red: 245.0/255.0, green: 50.0/255.0, blue: 79.0/255.0, alpha: 1.0)
+        self.navigationItem.rightBarButtonItem?.tintColor = CustomColor.grey
     }
     
     @objc func removeAllUser(_ sender: UIBarButtonItem) {

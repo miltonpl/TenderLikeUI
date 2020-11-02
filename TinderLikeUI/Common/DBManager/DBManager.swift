@@ -8,12 +8,6 @@
 import SQLite3
 import Foundation
 
-enum Gender: Int {
-    case male
-    case female
-    case others
-}
-
 // MARK: - Custom Enum of Type Error
 enum SqliteError: Error {
     

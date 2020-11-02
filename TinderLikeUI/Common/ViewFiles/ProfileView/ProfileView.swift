@@ -43,6 +43,8 @@ class ProfileView: UIView {
         self.titleLabel.text = "My name is"
         self.fullnameLabel.text = fullname
         self.imageView.layer.cornerRadius = self.imageView.frame.width/2
+        self.imageView.layer.borderWidth = 1
+        self.imageView.layer.borderColor = CustomCGColor.grey
         if let strUrl = strUrl, let url = URL(string: strUrl) {
             self.imageView.downloadImage(url)
         }

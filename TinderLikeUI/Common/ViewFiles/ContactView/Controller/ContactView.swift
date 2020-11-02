@@ -75,9 +75,11 @@ class ContactView: UIView {
         if let strUrl = contact.url, let url = URL(string: strUrl) {
             self.imageView.downloadImage(url)
             self.imageView.layer.cornerRadius = imageView.frame.width/2
-            self.imageView.layer.borderWidth = 2
+            self.imageView.layer.borderWidth = 1
+            self.imageView.layer.borderColor = CustomCGColor.grey
             self.myImageView.layer.cornerRadius = myImageView.frame.width/2
-            self.myImageView.layer.borderWidth = 2
+            self.myImageView.layer.borderColor = CustomCGColor.grey
+            self.myImageView.layer.borderWidth = 1
             
         }
     }

@@ -84,10 +84,8 @@ class CustomView: SwipeableView, NibView {
     
     func changeColdor(_ currentButton: UIButton) {
         guard lastButton != currentButton else { return }
-        //blue
-        lastButton?.imageView?.tintColor = UIColor(red: 25.0/255.0, green: 78.0/255.0, blue: 152.0/255.0, alpha: 1.0)
-        //red
-        currentButton.imageView?.tintColor = UIColor(red: 245.0/255.0, green: 50.0/255.0, blue: 79.0/255.0, alpha: 1.0)
+        lastButton?.imageView?.tintColor = CustomColor.blue
+        currentButton.imageView?.tintColor = CustomColor.red
         lastButton = currentButton
     }
     
@@ -140,7 +138,8 @@ extension CustomView {
         let calendarView = InformationView()
         guard let person = self.person, let date = person.dob?.date, let age = person.dob?.age, let gender = person.gender, let url = person.picture?.largeUrl else { return }
         let birthday = helper.convertDateFormatter(date: date)
-        calendarView.configure(strUrl: url, birthday: birthday, age: "\(age)", gender: gender, interesteddIn: "All")
+        
+        calendarView.configure(strUrl: url, birthday: birthday, age: "\(age)", gender: gender, interesteddIn: (gender == "male") ? "woman" : "man")
         
         self.containerView.addSubview(calendarView)
         self.currentView = calendarView

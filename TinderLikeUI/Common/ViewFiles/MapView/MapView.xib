@@ -21,12 +21,35 @@
                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="n74-Ga-n9j">
                     <rect key="frame" x="0.0" y="44" width="414" height="539"/>
                 </mapView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pea-kj-fRj">
+                    <rect key="frame" x="0.0" y="44" width="414" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ie0-dM-RLf">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                            <color key="textColor" red="0.075336165730000001" green="0.29757630829999998" blue="0.60505980250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ie0-dM-RLf" secondAttribute="bottom" id="6kr-0c-uzh"/>
+                        <constraint firstAttribute="height" constant="30" id="EOA-4v-KPt"/>
+                        <constraint firstAttribute="trailing" secondItem="ie0-dM-RLf" secondAttribute="trailing" id="XL4-7W-tp4"/>
+                        <constraint firstItem="ie0-dM-RLf" firstAttribute="leading" secondItem="pea-kj-fRj" secondAttribute="leading" id="nPr-c9-Vrr"/>
+                        <constraint firstItem="ie0-dM-RLf" firstAttribute="top" secondItem="pea-kj-fRj" secondAttribute="top" id="xpg-pK-yPY"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="n74-Ga-n9j" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="0n2-Bc-NE5"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="n74-Ga-n9j" secondAttribute="bottom" id="9G6-J5-LDN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pea-kj-fRj" secondAttribute="trailing" id="PGv-85-ebg"/>
                 <constraint firstItem="n74-Ga-n9j" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="f4I-St-hqc"/>
+                <constraint firstItem="pea-kj-fRj" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="fFp-g8-9bv"/>
+                <constraint firstItem="pea-kj-fRj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hpS-Qf-Cpp"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="n74-Ga-n9j" secondAttribute="trailing" id="vpK-Y9-X0k"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

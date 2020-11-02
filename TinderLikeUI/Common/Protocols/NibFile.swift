@@ -25,13 +25,10 @@ extension NibView {
     /// - Returns: an instantiated view from the Nib file of the same class name.
     fileprivate func loadViewFromNib<T: UIView>() -> T {
         let bundle = Bundle(for: type(of: self))
-//        print("In loadViw: ", String(describing: type(of: self)))
-        
         let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
         guard let view = nib.instantiate(withOwner: self, options: nil).first as? T else {
             fatalError("Cannot instantiate a UIView from the nib for class \(type(of: self))")
         }
-//        print("succeed")
         return view
     }
     

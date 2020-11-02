@@ -15,7 +15,8 @@ class UnlockView: UIView {
         didSet {
             self.tableView.tableFooterView = UIView()
             self.tableView.estimatedRowHeight = 100
-//            self.tableView.rowHeight = 60
+            self.tableView.isScrollEnabled = false
+            self.tableView.allowsSelection = false
             self.tableView.delegate = self
             self.tableView.dataSource = self
             self.tableView.register(UnlockTableViewCell.nib(), forCellReuseIdentifier: UnlockTableViewCell.identifier)

@@ -51,7 +51,6 @@ class SwipeableView: UIView {
         switch sender.state {
         case .began:
             layer.shouldRasterize = true
-//            delegate?.didBeginSwipe(onView: self)
         case .changed:
             changedSwipe()
         case .ended:
@@ -65,7 +64,6 @@ class SwipeableView: UIView {
     
     func resetPersonViewPosition() {
         UIView.animate(withDuration: 0.2) {
-//            self.transform = CGAffineTransform.identity// reset transform
             self.layer.transform = CATransform3DIdentity
         }
     }

@@ -22,12 +22,9 @@ class FavoriteTableViewCell: UITableViewCell {
     
     func configure(user: UserInfo) {
         self.itemImageView.layer.cornerRadius = self.itemImageView.frame.width/2
-        if let image = user.image {
-            self.itemImageView.image = image
-            self.itemImageView.removeFromSuperview()
-        } else {
-            self.itemImageView.downloadImage(URL(string: user.imageUrl ?? ""))
-        }
+        self.itemImageView.layer.borderWidth = 1
+        self.itemImageView.layer.borderColor = CustomCGColor.grey
+        self.itemImageView.downloadImage(URL(string: user.imageUrl ?? ""))
         self.titleLabel.text = user.title
         self.subtitleLabel.text = user.subtitle
     }

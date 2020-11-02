@@ -84,13 +84,8 @@ class CustomViewHandler: UIView {
         let horizontalInset = CGFloat(moveFrame) * self.horizontalInset
         let verticalInset = CGFloat(moveFrame) * self.verticalInset
         userViewBound.size.width -= 2 * horizontalInset
-        
         userViewBound.origin.x += horizontalInset
         userViewBound.origin.y += verticalInset
-        print(userViewBound.origin.x)
-        print(userViewBound.origin.y)
-        print("------------------------")
-
         userView.frame = userViewBound
     }
     
